@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>FAST#FIX Electronics – Naprawy elektroniki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --bg: #0d0d0d;
+            --bg2: #1f1f1f;
+            --accent: #ffd300;
+            --text: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        header {
+            border-bottom: 1px solid #333;
+            background: #000;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        .logo {
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 12px;
+            font-size: 0.9rem;
+        }
+
+        nav li a {
+            padding: 4px 8px;
+        }
+
+        .hero {
+            padding: 40px 16px 32px;
+            background: linear-gradient(135deg, #000 0%, #111 40%, #1f1f1f 100%);
+            border-bottom: 1px solid #333;
+        }
+
+        .hero-inner {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .hero h2 {
+            font-size: 1.1rem;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            max-width: 640px;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            border-radius: 3px;
+            border: 1px solid var(--accent);
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #000;
+            font-weight: 600;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--accent);
+        }
+
+        section {
+            padding: 24px 16px;
+            border-bottom: 1px solid #222;
+        }
+
+        section h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 12px;
+        }
+
+        .card {
+            background: var(--bg2);
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #262626;
+            font-size: 0.9rem;
+        }
+
+        .card h4 {
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        .price-list p {
+            font-size: 0.9rem;
+        }
+
+        .contact-block p {
+            font-size: 0.95rem;
+        }
+
+        footer {
+            padding: 16px;
+            font-size: 0.8rem;
+            text-align: center;
+            color: #888;
+        }
+
+        @media (min-width: 720px) {
+            .grid-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">FAST#FIX ELECTRONICS</div>
+            <ul>
+                <li><a href="#uslugi">Usługi</a></li>
+                <li><a href="#cennik">Cennik</a></li>
+                <li><a href="#portfolio">Realizacje</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-inner">
+        <h1>Profesjonalne naprawy elektroniki</h1>
+        <h2>Skarżysko‑Kamienna i okolice</h2>
+        <p>
+            FAST#FIX Electronics to lokalny serwis specjalizujący się w szybkiej i precyzyjnej naprawie
+            urządzeń elektronicznych. Łączę praktyczne doświadczenie z rzetelną diagnostyką, aby każda
+            naprawa była opłacalna i uczciwa.
+        </p>
+        <div class="hero-buttons">
+            <a href="#kontakt" class="btn btn-primary">Skontaktuj się</a>
+            <a href="#uslugi" class="btn btn-outline">Zobacz zakres usług</a>
+        </div>
+    </div>
+</section>
+
+<section id="uslugi">
+    <div class="container">
+        <h3>Zakres usług</h3>
+        <div class="grid grid-2">
+            <div class="card">
+                <h4>Naprawa telefonów</h4>
+                <p>
+                    Wymiana gniazd ładowania, baterii, taśm, mikrofonów oraz innych elementów
+                    eksploatacyjnych. Każda naprawa poprzedzona krótką diagnostyką.
+                </p>
+            </div>
+            <div class="card">
+                <h4>Lutowanie precyzyjne</h4>
+                <p>
+                    naprawa wszelkiego rodzaju urządzeń elektronicznych codziennego użytku
+                </p>
+            </div>
+            <div class="card">
+                <h4>Małe AGD i inne</h4>
+                <p>
+                    Naprawa Telefonów, głośników, pilotów, drobnych urządzeń i zasilaczy – często da się
+                    je przywrócić do życia niewielkim kosztem.
+                </p>
+            </div>
+            <div class="card">
+                <h4>Diagnostyka</h4>
+                <p>
+                    Szybka ocena stanu urządzenia, informacja czy naprawa ma sens oraz orientacyjna wycena
+                    przed rozpoczęciem prac.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cennik">
+    <div class="container">
+        <h3>Cennik </h3>
+        <div class="card price-list">
+                           <h4>Diagnoza jest Darmowa</h4>
+                           <h4>Dokładna cena zależy od rodzaju usterki i modelu urządzenia.</h4> 
+                <h4>Wycena zawsze przedstawiana jest przed rozpoczęciem naprawy.</h4>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h3>Przykładowe realizacje</h3>
+        <div class="grid grid-2">
+            <div class="card">
+                <h4>Wymiana gniazda USB</h4>
+                <p>
+                    Urządzenie nie reagowało na ładowanie. Po diagnozie wykonana została wymiana gniazda –
+                    telefon działa prawidłowo.
+                </p>
+            </div>
+            <div class="card">
+                <h4>Naprawa słuchawek</h4>
+                <p>
+                    Przerwany przewód przy wtyku jack. Wymiana końcówki oraz wzmocnienie przewodu –
+                    słuchawki odzyskały pełną funkcjonalność.
+                </p>
+            </div>
+            <div class="card">
+                <h4>Lutowanie taśmy sygnałowej</h4>
+                <p>
+                    Uszkodzona taśma powodowała brak obrazu. Precyzyjne lutowanie przywróciło działanie
+                    urządzenia.
+                </p>
+            </div>
+            <div class="card">
+                <h4>Naprawa pilota</h4>
+                <p>
+                    Wymiana uszkodzonego elementu SMD oraz czyszczenie płytki – pilot działa stabilnie.
+                </p>
+            </div>
+            <div class="card">
+                 <h4>Każda naprawa jest objęta gwarancją 14dni roboczych</h4>   
+        </div>
+    </div>
+</section>
+
+<section id="kontakt">
+    <div class="container">
+        <h3>Kontakt</h3>
+        <div class="card contact-block">
+            <p><strong>FAST#FIX Electronics</strong></p>
+            <p>Telefon: 665702243</p>
+            <p>Messenger : dostępny po kontakcie</p>
+            <p>Lokalizacja: Skarżysko‑Kamienna (okolice)</p>
+            <p>Godziny: po południami – najlepiej wiadomość tekstowa</p>
+            <p>zapraszam na TIKTOK'a Fast.Fixelectronics</p>
+            <p>Kontakt także mailem zrywny0@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    FAST#FIX Electronics – lokalny serwis elektroniki • </footer>
+</body>
+</html>
